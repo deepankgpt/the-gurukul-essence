@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gurukul Essence – Yoga & Therapy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #fefcf8; color: #3b2f23; }
+
+    header img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .hero {
+      background: #e6d4b6;
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      color: #4b3621;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 880px;
+      margin: auto;
+    }
+
+    .about { background: #e4f1f6; }
+    .services { background: #fcebd4; }
+    .experience { background: #f2f2f2; }
+    .feedback-section { background: #ebe7f3; }
+
+    section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 760px;
+      margin: auto;
+      color: #4b3b2d;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 2rem;
+      color: #4b3b2d;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .button {
+      background-color: #4b3621;
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #6b4b30;
+    }
+
+    .feedback {
+      max-width: 500px;
+      margin: 2rem auto 0;
+    }
+
+    .feedback textarea {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .feedback input[type="submit"] {
+      background: #4b3621;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #ebe7f3;
+      color: #5a4934;
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      section h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="PNG image.png" alt="Spiritual Yoga Banner" />
+</header>
+
+<div class="hero">
+  <h1>THE GURUKUL ESSENCE</h1>
+  <p>Yoga & Therapy for Holistic Living — harmonize your body, mind, and spirit 🌿</p>
+</div>
+
+<section class="about">
+  <h2>About</h2>
+  <p>
+    Traditional Yoga is a sacred transmission — not learned, but lived — through the timeless bond of Guru and Shishya.
+  </p>
+  <p style="margin-top: 1rem;">
+    At THE GURUKUL ESSENCE, we revive this living tradition where Yoga is not a class — but a journey, a surrender, and a transformation through presence, practice, and grace.
+  </p>
+</section>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <p>We offer personalized Yoga sessions, group classes, wellness workshops, and therapy programs tailored to your unique needs — both online and in person.</p>
+</section>
+
+<section class="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li>Yoga sessions at <strong>Rana Farms Club, Dehradun</strong></li>
+    <li>School programs at <strong>Doon Valley International School</strong></li>
+    <li>Online & offline <strong>therapeutic yoga</strong> for health and healing</li>
+    <li>Corporate sessions for <strong>ONGC trainees</strong> at ONGC Academy</li>
+    <li>Founder of <strong>The Gurukul Essence</strong> and its retreats</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Schedule</h2>
+  <p>Morning and evening batches available. Contact us for personalized session timings and upcoming programs.</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Connect with us for classes, therapy, or collaborations:</p>
+  <div class="buttons">
+    <a href="https://instagram.com/thegurukulessence" class="button" target="_blank">Instagram</a>
+    <a href="mailto:deepank.yog@gmail.com" class="button">Email</a>
+    <a href="#" class="button" title="Google Reviews coming soon">Leave a Review</a>
+  </div>
+</section>
+
+<section class="feedback-section">
+  <h2>Feedback</h2>
+  <p>We value your thoughts. Share your experience with us:</p>
+  <div class="feedback">
+    <form action="mailto:deepank.yog@gmail.com" method="POST" enctype="text/plain">
+      <textarea name="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+      <input type="submit" value="Send Feedback">
+    </form>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 The Gurukul Essence. All rights reserved.
+</footer>
+
+</body>
+</html>
