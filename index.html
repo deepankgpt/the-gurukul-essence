@@ -6,147 +6,53 @@
   <title>The Gurukul Essence – Yoga & Therapy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #fffaf5; color: #3b2f23; }
+    /* Base & Nav */
+    body { margin:0; font-family:'Inter',sans-serif; color:#3b2f23; background:#fffaf5; }
+    header { position: sticky; top:0; background:#fff; z-index:10; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    nav { display:flex; justify-content:center; gap:2rem; padding:1rem;}
+    nav a { text-decoration:none; color:#3b2f23; font-weight:600; }
+    nav a:hover { color:#6b4b30; }
 
-    header img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-    }
+    /* Hero */
+    .hero { background:#3b2f23; color:#fff4e2; text-align:center; padding:6rem 2rem; }
+    .hero h1 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.25rem; max-width:700px; margin:auto; }
 
-    .hero {
-      background: #3b2f23; /* Earth - dark brown */
-      text-align: center;
-      padding: 5rem 2rem 3rem;
-      color: #fff4e2;
-    }
+    /* Sections */
+    section { padding:4rem 2rem; max-width:960px; margin:auto; }
+    section h2 { font-size:2.25rem; text-align:center; margin-bottom:1.5rem; }
+    section p, section ul { font-size:1.05rem; line-height:1.7; color:#4b3b2d; }
+    section ul { list-style:disc; padding-left:2rem; }
 
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
+    /* Section backgrounds */
+    .about { background:#d0ecfa; }
+    .services { background: linear-gradient(45deg,#ffeadb,#ffccb3); }
+    .experience { background: linear-gradient(to bottom, #e6f4fc, #ffffff); }
+    .reviews { background:#f7f3ef; }
+    .contact { background:#ebe7f3; }
 
-    .hero p {
-      font-size: 1.25rem;
-      max-width: 720px;
-      margin: auto;
-    }
+    /* Cards */
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
+    .card { background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
 
-    section {
-      padding: 4rem 2rem;
-      max-width: 880px;
-      margin: auto;
-    }
+    /* Buttons */
+    .btn { display:inline-block; background:#3b2f23; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:500; transition:0.3s;}
+    .btn:hover { background:#5a4331; }
 
-    .about {
-      background: #d0ecfa; /* Water - blue */
-    }
-
-    .services {
-      background: linear-gradient(to right, #ffeadb, #ffccb3); /* Fire - orange red dual tone */
-    }
-
-    .experience {
-      background: linear-gradient(to bottom, #e6f4fc, #ffffff); /* Air - light flowing mix */
-      background-image: url('https://transparenttextures.com/patterns/clouds.png');
-      background-repeat: repeat;
-    }
-
-    .feedback-section {
-      background: linear-gradient(to top, #dcefff, #ffffff); /* Sky - sky blue to white */
-    }
-
-    section h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 1.2rem;
-      text-align: center;
-    }
-
-    section p {
-      font-size: 1.1rem;
-      text-align: center;
-      max-width: 760px;
-      margin: auto;
-      color: #3d2d1f;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 2rem;
-      color: #3d2d1f;
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-top: 1rem;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .button {
-      background-color: #3b2f23;
-      color: #fff;
-      padding: 0.8rem 1.6rem;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #5a4331;
-    }
-
-    .feedback {
-      max-width: 500px;
-      margin: 2rem auto 0;
-    }
-
-    .feedback textarea {
-      width: 100%;
-      padding: 1rem;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    .feedback input[type="submit"] {
-      background: #3b2f23;
-      color: #fff;
-      border: none;
-      padding: 0.8rem 1.4rem;
-      border-radius: 6px;
-      font-weight: 500;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #eeeef4;
-      color: #5a4934;
-      margin-top: 0;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 2.2rem; }
-      section h2 { font-size: 1.5rem; }
-    }
+    /* Footer */
+    footer { text-align:center; padding:2rem; background:#eeeef4; color:#5a4934; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="PNG image.png" alt="Spiritual Yoga Banner" />
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#experience">Experience</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <div class="hero">
@@ -154,52 +60,48 @@
   <p>Yoga & Therapy for Holistic Living — harmonize your body, mind, and spirit 🌿</p>
 </div>
 
-<section class="about">
-  <h2>About</h2>
+<section class="about" id="about">
+  <h2>About Us</h2>
   <p>Traditional Yoga is a sacred transmission — not learned, but lived — through the timeless bond of Guru and Shishya.</p>
-  <p style="margin-top: 1rem;">At THE GURUKUL ESSENCE, we revive this living tradition where Yoga is not a class — but a journey, a surrender, and a transformation through presence, practice, and grace.</p>
+  <p>At THE GURUKUL ESSENCE, we revive this living tradition where Yoga is not a class — but a journey, a surrender, and a transformation through presence, practice, and grace.</p>
 </section>
 
-<section class="services">
+<section class="services" id="services">
   <h2>Our Services</h2>
-  <p>We offer personalized Yoga sessions, group classes, wellness workshops, and therapy programs tailored to your unique needs — both online and in person.</p>
+  <div class="grid">
+    <div class="card"><h3>Personal Yoga Sessions</h3><p>Customized one-on-one yoga therapy and asana guidance.</p></div>
+    <div class="card"><h3>Group Classes</h3><p>Mindful group sessions to build strength and peace together.</p></div>
+    <div class="card"><h3>Wellness Workshops</h3><p>Workshops on pranayama, meditation, Ayurveda, and holistic living.</p></div>
+    <div class="card"><h3>Therapy Programs</h3><p>Specialized yoga therapy for stress, pain, and life balance.</p></div>
+  </div>
 </section>
 
-<section class="experience">
+<section class="experience" id="experience">
   <h2>Experience</h2>
   <ul>
-    <li>Corporate wellness training for <strong>ONGC trainees</strong> at ONGC Academy, Dehradun</li>
-    <li>School programs at <strong>Doon Valley International School</strong>, Dehradun</li>
-    <li><strong>Online & offline therapeutic yoga</strong> for personal health & healing</li>
-    <li>Sessions at <strong>Rana Farms Club</strong>, Dehradun</li>
-    <li>Yoga programs at <strong>The Terraces Resort</strong>, Kanatal</li>
+    <li>Corporate sessions at ONGC Academy, Dehradun</li>
+    <li>School programs at Doon Valley International School, Dehradun</li>
+    <li>Online & offline therapeutic yoga for health & healing</li>
+    <li>Sessions at Rana Farms Club, Dehradun</li>
+    <li>Yoga programs at The Terraces Resort, Kanatal</li>
   </ul>
 </section>
 
-<section>
-  <h2>Schedule</h2>
-  <p>Morning and evening batches available. Contact us for personalized session timings and upcoming programs.</p>
+<section class="reviews" id="reviews">
+  <h2>Testimonials</h2>
+  <!-- Example static review -->
+  <blockquote>
+    <p>“Deepank’s guided sessions brought peace and strength—truly transformative.”</p>
+    <footer>— Student Name</footer>
+  </blockquote>
+  <p><a class="btn" href="#" title="Google reviews soon">Leave a Review</a></p>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Connect with us for classes, therapy, or collaborations:</p>
-  <div class="buttons">
-    <a href="https://instagram.com/thegurukulessence" class="button" target="_blank">Instagram</a>
-    <a href="mailto:deepank.yog@gmail.com" class="button">Email</a>
-    <a href="#" class="button" title="Google Reviews coming soon">Leave a Review</a>
-  </div>
-</section>
-
-<section class="feedback-section">
-  <h2>Feedback</h2>
-  <p>We value your thoughts. Share your experience with us:</p>
-  <div class="feedback">
-    <form action="mailto:deepank.yog@gmail.com" method="POST" enctype="text/plain">
-      <textarea name="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
-      <input type="submit" value="Send Feedback">
-    </form>
-  </div>
+<section class="contact" id="contact">
+  <h2>Contact & Therapy Booking</h2>
+  <p>Ready to begin your journey? Reach out for classes, therapy, or any questions. 🌿</p>
+  <p><a class="btn" href="mailto:deepank.yog@gmail.com">Email Deepank</a></p>
+  <p><a class="btn" href="https://instagram.com/thegurukulessence" target="_blank">Instagram</a></p>
 </section>
 
 <footer>
