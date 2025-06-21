@@ -3,97 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Gurukul Essence</title>
+  <title>The Gurukul Essence – Yoga & Therapy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    body { margin: 0; font-family: 'Inter', sans-serif; background: #fff; color: #111; }
-    header { position: sticky; top: 0; background: #fff; z-index: 10; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-    nav { display: flex; justify-content: center; padding: 1rem 2rem; gap: 2rem; }
-    nav a { text-decoration: none; color: #111; font-weight: 600; }
-    nav a:hover { color: #555; }
+    /* Base & Nav */
+    body { margin:0; font-family:'Inter',sans-serif; color:#3b2f23; background:#fffaf5; }
+    header { position: sticky; top:0; background:#fff; z-index:10; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    nav { display:flex; justify-content:center; gap:2rem; padding:1rem;}
+    nav a { text-decoration:none; color:#3b2f23; font-weight:600; }
+    nav a:hover { color:#6b4b30; }
 
-    .hero {
-      position: relative;
-      height: 100vh;
-      background: url('PNG image.png') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      text-align: center;
-    }
+    /* Hero */
+    .hero { background:#3b2f23; color:#fff4e2; text-align:center; padding:6rem 2rem; }
+    .hero h1 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.25rem; max-width:700px; margin:auto; }
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
+    /* Sections */
+    section { padding:4rem 2rem; max-width:960px; margin:auto; }
+    section h2 { font-size:2.25rem; text-align:center; margin-bottom:1.5rem; }
+    section p, section ul { font-size:1.05rem; line-height:1.7; color:#4b3b2d; }
+    section ul { list-style:disc; padding-left:2rem; }
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
+    /* Section backgrounds */
+    .about { background:#d0ecfa; }
+    .services { background: linear-gradient(45deg,#ffeadb,#ffccb3); }
+    .experience { background: linear-gradient(to bottom, #e6f4fc, #ffffff); }
+    .reviews { background:#f7f3ef; }
+    .contact { background:#ebe7f3; }
 
-    .hero-content h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-    }
+    /* Cards */
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
+    .card { background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
 
-    .hero-content p {
-      font-size: 1.25rem;
-      max-width: 700px;
-      margin: auto;
-    }
+    /* Buttons */
+    .btn { display:inline-block; background:#3b2f23; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:500; transition:0.3s;}
+    .btn:hover { background:#5a4331; }
 
-    .hero-content a {
-      display: inline-block;
-      margin-top: 2rem;
-      background: #fff;
-      color: #111;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-
-    .hero-content a:hover {
-      background: #ddd;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f2f2f2;
-      color: #555;
-      font-size: 0.9rem;
-    }
+    /* Footer */
+    footer { text-align:center; padding:2rem; background:#eeeef4; color:#5a4934; }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#experience">Experience</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>THE GURUKUL ESSENCE</h1>
-      <p>Ancient wisdom. Modern healing.</p>
-      <a href="#about">Start Your Practice</a>
-    </div>
-  </section>
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#experience">Experience</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <footer>
-    &copy; 2025 The Gurukul Essence. All rights reserved.
-  </footer>
+<div class="hero">
+  <h1>THE GURUKUL ESSENCE</h1>
+  <p>Yoga & Therapy for Holistic Living — harmonize your body, mind, and spirit 🌿</p>
+</div>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Traditional Yoga is a sacred transmission — not learned, but lived — through the timeless bond of Guru and Shishya.</p>
+  <p>At THE GURUKUL ESSENCE, we revive this living tradition where Yoga is not a class — but a journey, a surrender, and a transformation through presence, practice, and grace.</p>
+</section>
+
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Personal Yoga Sessions</h3><p>Customized one-on-one yoga therapy and asana guidance.</p></div>
+    <div class="card"><h3>Group Classes</h3><p>Mindful group sessions to build strength and peace together.</p></div>
+    <div class="card"><h3>Wellness Workshops</h3><p>Workshops on pranayama, meditation, Ayurveda, and holistic living.</p></div>
+    <div class="card"><h3>Therapy Programs</h3><p>Specialized yoga therapy for stress, pain, and life balance.</p></div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li>Corporate sessions at ONGC Academy, Dehradun</li>
+    <li>School programs at Doon Valley International School, Dehradun</li>
+    <li>Online & offline therapeutic yoga for health & healing</li>
+    <li>Sessions at Rana Farms Club, Dehradun</li>
+    <li>Yoga programs at The Terraces Resort, Kanatal</li>
+  </ul>
+</section>
+
+<section class="reviews" id="reviews">
+  <h2>Testimonials</h2>
+  <!-- Example static review -->
+  <blockquote>
+    <p>“Deepank’s guided sessions brought peace and strength—truly transformative.”</p>
+    <footer>— Student Name</footer>
+  </blockquote>
+  <p><a class="btn" href="#" title="Google reviews soon">Leave a Review</a></p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact & Therapy Booking</h2>
+  <p>Ready to begin your journey? Reach out for classes, therapy, or any questions. 🌿</p>
+  <p><a class="btn" href="mailto:deepank.yog@gmail.com">Email Deepank</a></p>
+  <p><a class="btn" href="https://instagram.com/thegurukulessence" target="_blank">Instagram</a></p>
+</section>
+
+<footer>
+  &copy; 2025 The Gurukul Essence. All rights reserved.
+</footer>
+
 </body>
 </html>
