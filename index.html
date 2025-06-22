@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Gurukul Essence – Yoga & Therapy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRUzF4Bnh3H/2l9vv+vEHC+GRhjg0/0Yk7+OzXKjU+fWkGJstBxqRZfsYbRZWoklyG+j5hQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     html { scroll-behavior: smooth; }
     body { margin: 0; font-family: 'Inter', sans-serif; background: #fffaf5; color: #3b2f23; }
@@ -102,5 +102,74 @@
       <p>Ancient wisdom. Modern healing 🌿</p>
     </div>
   </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>At The Gurukul Essence</strong>, our foundation lies in the ancient bond of <strong>Guru and Shishya</strong> — a sacred lineage where Yoga is passed down not just by words but through presence, observation, and deep trust.</p>
+    <p>This method is not about certifications or mass classes — it is about awakening, living wisdom, and transformation through a deeply personal relationship between teacher and student. We believe this is the essence of Yoga, not a modern invention but a timeless awakening.</p>
+  </section>
+
+  <section id="therapy">
+    <h2>Healing Through Yoga</h2>
+    <p>Our therapy-based approach tailors each session to heal the individual — whether you're managing stress, back pain, or anxiety. Yoga Therapy with us is presence-based and life-centered, not performance-driven.</p>
+    <a class="btn" href="#contact">Start Your Healing</a>
+  </section>
+
+  <section id="philosophy">
+    <h2>Yoga Philosophy</h2>
+    <p>Rooted in Patanjali’s Yoga Sutras and the Ashtanga system, we integrate timeless teachings — Yama, Niyama, Asana, Pranayama, Dhyana — into every healing journey. Yoga here is for inner transformation, not certification.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>🧘 1-on-1 Yoga Therapy Sessions</li>
+      <li>👥 Group Classes (Offline + Online)</li>
+      <li>🌿 Therapeutic Programs for Lifestyle Disorders</li>
+      <li>🧠 Breathwork and Meditation Training</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>Corporate sessions at ONGC Academy, Dehradun</li>
+      <li>Programs at Doon Valley International School</li>
+      <li>Yoga at The Terraces Resort, Kanatal</li>
+      <li>Workshops at Rana Farms Club</li>
+      <li>Years of Online & In-person Healing Practice</li>
+    </ul>
+  </section>
+
+  <section id="reviews">
+    <h2>Student Testimonials</h2>
+    <p>“Each session feels like returning to yourself.” — a participant</p>
+    <p>“More than Yoga, it’s medicine for the soul.”</p>
+    <a class="btn" href="#">Leave a Review</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Bookings</h2>
+    <div style="display:flex; gap:2rem; justify-content:center; flex-wrap:wrap;">
+      <a href="mailto:deepank.yog@gmail.com" target="_blank" class="btn" title="Email">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://instagram.com/thegurukulessence" target="_blank" class="btn" title="Instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://wa.me/919045769190" target="_blank" class="btn" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('section').forEach(s => observer.observe(s));
+  </script>
 </body>
 </html>
