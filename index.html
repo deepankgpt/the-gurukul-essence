@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gurukul Essence – Yoga & Therapy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2e0e6f76e.js" crossorigin="anonymous"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #fffaf5; color: #3b2f23; }
+    header { position: sticky; top: 0; background: #fff; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; max-width: 1200px; margin: auto; }
+    nav a { text-decoration: none; color: #3b2f23; font-weight: 600; margin: 0 1rem; }
+    nav a:hover { color: #6b4b30; }
+
+    .hero {
+      position: relative; height: 100vh;
+      background: url('PNG image.png') center/cover no-repeat;
+      background-size: 100% auto;
+      display: flex; justify-content: center; align-items: center;
+      flex-direction: column; text-align: center;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(0, 0, 0, 0.45); z-index: 1;
+    }
+    .hero-content {
+      position: relative; z-index: 2; padding: 0 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem; color: #fff; margin-bottom: 1rem; letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.3rem; color: #f7f1e3; font-weight: 300;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      max-width: 960px; margin: 5rem auto; padding: 0 2rem;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center;
+    }
+    section p, section ul {
+      font-size: 1.15rem; line-height: 1.8; color: #4b3b2d;
+    }
+    section ul { padding-left: 2rem; }
+
+    .home, .about, .therapy, .philosophy, .services, .experience, .reviews, .contact {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      padding: 3rem 2rem;
+    }
+
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fdfdfd;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block; background: #3b2f23; color: #fff;
+      padding: 0.8rem 1.6rem; border-radius: 8px;
+      text-decoration: none; font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #5a4331; }
+
+    .social-icons {
+      margin-top: 2rem; text-align: center;
+    }
+    .social-icons a {
+      display: inline-block; margin: 0 0.5rem;
+      font-size: 1.5rem; color: #3b2f23;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover { color: #6b4b30; }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center; padding: 2rem;
+      background: #eeeef4; color: #5a4934; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>The Gurukul Essence</strong></div>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#therapy">Therapy</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>THE GURUKUL ESSENCE</h1>
+      <p>Ancient wisdom. Modern healing 🌿</p>
+    </div>
+  </section>
+
+  <section class="philosophy" id="philosophy">
+    <h2>Yoga Philosophy</h2>
+    <p>Yoga is not merely physical movement — it is a profound path to inner freedom. At The Gurukul Essence, we embrace the wisdom of the <strong>Patanjali Yoga Sutras</strong>, <strong>Bhagavad Gita</strong>, and ancient yogic texts that emphasize the union of body, breath, and consciousness.</p>
+    <p>Our approach honors the <em>Ashtanga Yoga</em> system — including Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana, and Samadhi. We do not reduce Yoga to fitness; we offer it as a tool to dissolve suffering and awaken inner harmony.</p>
+    <p>Therapeutic Yoga integrates this philosophy into practical life — enabling clients to reconnect with their inner nature while improving their mental, emotional, and physical health.</p>
+  </section>
+</body>
+</html>
